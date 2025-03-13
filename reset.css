@@ -1,0 +1,35 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100dvh;
+  text-rendering: optimizeLegibility;
+  line-height: 1.6;
+}
+
+svg,
+video,
+picture,
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
