@@ -31,8 +31,8 @@
     </style>
   </head>
   <body class="flex-column">
-    <main class="wrapper flex-column">
-      <div class="card">
+    <main class="wrapper flex-column" role="main">
+      <div class="card" role="region" aria-labelledby="product-title">
         <picture class="card__img">
           <source
             media="(min-width: 37.5em )"
@@ -43,7 +43,7 @@
             alt="exquisite fragrance"
           />
         </picture>
-        <section class="card__body flex-column">
+        <section class="card__body flex-column" role="contentinfo">
           <p class="card__category"><span class="tag">Perfume</span></p>
 
           <h1 class="card__title">Gabrielle Essence Eau De Parfum</h1>
@@ -53,10 +53,15 @@
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
           <div class="card__prices">
-            <span class="card__price--current">$149.99</span>
-            <span class="card__price--former">$169.99</span>
+            <span class="card__price--current" role="price">$149.99</span>
+            <span
+              class="card__price--former"
+              role="price"
+              aria-label="was price"
+              >$169.99</span
+            >
           </div>
-          <button class="card__call-to-action">
+          <button class="card__call-to-action" role="button">
             <img
               class="icon"
               src="./images/icon-cart.svg"
@@ -66,7 +71,7 @@
           </button>
         </section>
       </div>
-      <div class="attribution">
+      <div class="attribution" role="contentinfo">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
